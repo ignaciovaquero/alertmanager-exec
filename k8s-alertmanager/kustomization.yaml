@@ -1,0 +1,9 @@
+commonLabels:
+  app: alertmanager
+configMapGenerator:
+  - name: alertmanager-config
+    files:
+      - alertmanager.yml
+resources:
+  - deployment.yml
+  - service.yml

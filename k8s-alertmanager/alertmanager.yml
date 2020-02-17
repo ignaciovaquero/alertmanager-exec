@@ -1,0 +1,10 @@
+global:
+  resolve_timeout: 5m
+  http_config: {}
+route:
+  receiver: default
+receivers:
+- name: default
+  webhook_configs:
+  - send_resolved: true
+    url: http://webhook:8000
